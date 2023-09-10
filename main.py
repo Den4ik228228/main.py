@@ -1,4 +1,5 @@
 import time
+print('Здравствуй, здесь переводчик со сленгового языка, наслаждайся)')
 while True:
     meme_dict = {
                 "КРИНЖ": "Что-то очень странное или стыдное",
@@ -8,9 +9,11 @@ while True:
                 "РИПОВЫЙ": "страшный, пугающий",
                 "АГРИТЬСЯ": "злиться"
                 }
-    word = input("Введите непонятное слово (большими буквами!): ")
-    if word in meme_dict.keys():
-        print(meme_dict[word])
+    word = input("Введите непонятное слово (большими буквами!) или слово стоп: ")
+    if word.upper() in meme_dict.keys():
+        print(meme_dict[word.upper()])
+    elif word == 'стоп':
+        break
     else:
         print('Такого слова нет в словаре(')
     time.sleep(2)
