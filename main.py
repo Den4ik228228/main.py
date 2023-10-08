@@ -28,7 +28,7 @@ async def repeat(ctx, times: int, content = "repeating..."):
         await ctx.send(content)
 
 
-bot.run("MTE1NTU0OTQxNzI0MDI3NzAzMg.G2m02z.iUxyZw0Ng0G_dtaMBPqVLoFktyWg_oP94K5DPU")
+bot.run("")
 import time
 print('Здравствуй, здесь переводчик со сленгового языка, наслаждайся)')
 while True:
